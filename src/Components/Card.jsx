@@ -16,6 +16,7 @@ const Card = ({ id, img, heart, eye, category, price, ratingStar, ratingRate }) 
                 <div>
                     <p>{category}</p>
                 </div>
+                <p>{price}</p>
                 </div>
                
                 
