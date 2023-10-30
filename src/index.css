@@ -1,10 +1,43 @@
+@import url("https://fonts.cdnfonts.com/css/poppins");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  /* layouts */
+  --px: 80px;
+  /* Colors */
+  --pri-bg: #fff;
+  --text2: #000;
+  --cart-quantity-border: rgba(0, 0, 0, 0.4);
 
-body{
-    max-width: 1366px;
-    /* margin: auto; */
-    background: rgb(236, 239, 240);
+  /* Font-Family */
+  --poppins: "Poppins", sans-serif;
+}
+
+body {
+  max-width: 1366px;
+  /* margin: auto; */
+  background: rgb(236, 239, 240);
+}
+
+.container {
+  max-width: 1366px;
+  margin-inline: auto;
+  width: 100%;
+}
+
+.overflow-x-scroll,
+.overflow-x-auto,
+.overflow-y-auto,
+.overflow-y-scroll {
+  scrollbar-width: none;
+}
+
+.overflow-x-scroll::-webkit-scrollbar,
+.overflow-x-auto::-webkit-scrollbar,
+.overflow-y-auto::-webkit-scrollbar,
+.overflow-y-scroll::-webkit-scrollbar {
+  display: none;
 }
